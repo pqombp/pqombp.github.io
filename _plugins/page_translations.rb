@@ -14,7 +14,7 @@ module TranslationsPlugin
         en_title = item['en_title']
 
         # sv page
-        site.pages << Jekyll::PageWithoutAFile.new(site, site.source, '.', sv_name + '.html').tap do |file|
+        site.pages << Jekyll::PageWithoutAFile.new(site, site.source, '.', sv_name + '.md').tap do |file|
             file.data.merge!(
                 "layout" => "default",
                 "title" => sv_title,
@@ -25,7 +25,7 @@ module TranslationsPlugin
         end
 
         # en page
-        site.pages << Jekyll::PageWithoutAFile.new(site, site.source, 'en', en_name + '.html').tap do |file|
+        site.pages << Jekyll::PageWithoutAFile.new(site, site.source, 'en', en_name + '.md').tap do |file|
             file.data.merge!(
                 "layout" => "default",
                 "title" => en_title
