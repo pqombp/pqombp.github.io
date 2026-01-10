@@ -22,7 +22,7 @@ pages do not allow 301 redirects. The redirects are stored in
 the available redirects.
 
 **Translations** are implemented as follows. The user writes a file in
-[`_includes/base_pages`](_includes/base_pages) that includes both Swedish and
+[`_includes/base_pages/`](_includes/base_pages/) that includes both Swedish and
 English translations, toggled by Liquid tags:
 
 ```
@@ -41,7 +41,7 @@ URL) and titles (i.e. what appears on the browser tab) in
 [`_data/page_translations.csv`](/_data/page_translations.csv). The plugin
 [`_plugins/page_translations.rb`](/_plugins/page_translations.rb) reads the
 CSV file and generates the two versions of the page. Only the English
-versions get a subdirectory, `/en/`.
+versions get a subdirectory, `en/`.
 
 **Note:** Currently, all pages in `_data/page_translations.csv` are also
 added to the navigation bar. This should be addressed in the future, where we
