@@ -10,7 +10,7 @@ Under tiden, lyssna på våra största bangers:
 This page is in English.
 {%- endif -%}
 &nbsp;
-<div class="col-lg-4 col-md-6">
+<div class="col-lg-4">
     <iframe src="https://embed.spotify.com/follow/1/?uri=spotify:artist:1MuP2VJJAxrHsf4gwJzBU2&size=detail&theme=dark"
             width="100%" height="380" frameborder="0" style="border:none; overflow:hidden;"
             allowtransparency="true"></iframe>
