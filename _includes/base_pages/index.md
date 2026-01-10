@@ -1,5 +1,5 @@
-{% if page.lang == "sv" %}
+{%- if page.sv -%}
 Denna sidan är på svenska.
-{% else %}
+{%- else -%}
 This page is in English.
-{% endif %}
+{%- endif -%}
