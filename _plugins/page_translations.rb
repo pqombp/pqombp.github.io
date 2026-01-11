@@ -16,7 +16,7 @@ module TranslationsPlugin
         # sv page
         site.pages << Jekyll::PageWithoutAFile.new(site, site.source, '.', sv_name + '.md').tap do |file|
             file.data.merge!(
-                "layout" => "default",
+                "layout" => "bootstrap_page",
                 "title" => sv_title,
                 "sv" => true
             )
@@ -27,7 +27,7 @@ module TranslationsPlugin
         # en page
         site.pages << Jekyll::PageWithoutAFile.new(site, site.source, 'en', en_name + '.md').tap do |file|
             file.data.merge!(
-                "layout" => "default",
+                "layout" => "bootstrap_page",
                 "title" => en_title
             )
             file.content = File.read(File.expand_path("../_includes/base_pages/#{sv_name}.md", __dir__))

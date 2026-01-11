@@ -8,12 +8,14 @@ GitHub Action for Jekyll (i.e., **NOT** the default GitHub pages workflow).
 Documentation hints
 -------------------
 
-This website has two features that need some explanation:
+This website has three features that need some explanation:
 - redirects to other URLs;
-- Swedish and English translations of each page.
+- Swedish and English translations of each page;
+- a custom Markdown extension.
 
-Both of these features use Ruby plugins that Jekyll executes when generating
-the website.
+The first two features use Ruby plugins that Jekyll executes when generating
+the website. The last feature is explained
+[further below](#custom-markdown-extension-tilde-dot).
 
 **Redirects** are implemented as meta refresh redirects because free GitHub
 pages do not allow 301 redirects. The redirects are stored in
@@ -46,3 +48,76 @@ versions get a subdirectory, `en/`.
 **Note:** Currently, all pages in `_data/page_translations.csv` are also
 added to the navigation bar. This should be addressed in the future, where we
 would also want to customize the navigation bar a bit more.
+
+Custom Markdown extension ("tilde-dot")
+---------------------------------------
+
+In order to have slightly richer webpages, I have implemented a basic Markdown
+extension, which I am calling tilde-dot. This extension implements some basic
+elements of [Bootstrap](https://getbootstrap.com/). For example, on a Markdown
+page with `layout: bootstrap_page`, the code
+
+```
+Title
+=====
+
+~.~
+
+~.text.~
+
+Text with dynamic width
+
+~.float.right.~
+
+Float on the right
+
+~.~
+
+Full-width text
+
+```
+
+will produce the following HTML:
+
+```
+<div class="row">
+    <div class="col-lg-12">
+        <h1 id="title">Title</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-6 col-lg-7">
+        <p>Text with dynamic width</p>
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-5 pull-right">
+        <p>Float on the right</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <p>Full-width text</p>
+    </div>
+</div>
+```
+
+This is done via Liquid templating: see the layout
+[`bootstrap_page.html`](/_layouts/bootstrap_page.html). In words, the code is
+translated into Bootstrap rows and columns. The tag `~.~` creates a new row,
+and the tags `~.[NAME].~` put all content, up until the next tag, into a
+Boostrap column. The available `[NAME]`s are: `text`, `float.right`, and
+`float.left`, which are translated into Bootstrap classes as shown above.
+
+> **WARNING:** Due to the hack-y nature of the extension, tilde-dot tags must
+> separated by blank lines on both sides *after* the Liquid templating is
+> processed. Essentially, if there were no processing, each tag should be
+> surrounded by its own `<p>...<\p>`.
+
+In the actual website, all of the `base_pages` use the `boostrap_page` layout;
+this is decided by the `page_translations.rb` plugin. The order in which
+things are processed is:
+1. From a `base_page`, the translation is selected, i.e. the
+  `{{ if page.sv }} ... {{ else }} ... {{ endif }}` blocks are computed
+2. `bootstrap_page.html` then translates the tilde-dot tags into Bootstrap
+  elements.
