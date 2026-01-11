@@ -1,14 +1,16 @@
+html {
+    background-color: #0d0c0a  url('/assets/images/site/bg-bv1.jpg') !important;
+    height: 100%;
+}
+
 body {
     background: #0d0c0a url('/assets/images/site/bg-bv1.jpg') !important;
     background-size: auto;
+    height: 100%;
     /* min-height: 100%; */
     /* position: relative; */
     display: flex;
     flex-direction: column;
-}
-
-html, body {
-    height: 100%;
 }
 
 /* html,
@@ -72,10 +74,6 @@ a {
 
 a:hover {
     color: #f0ebc5;
-}
-
-.lead {
-    padding-bottom:1em;
 }
 
 .row {
