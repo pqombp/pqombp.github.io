@@ -51,6 +51,7 @@ Orquestern
 En tigerrandig, fullskalig och jazzspelande studentorkester med sann spelglädje. Till och med Stockholms äldsta.
 
 I vår orquester har vi följande instrument:
+
 * Flöjt
 * Klarinett
 * Alt-, Tenor- och Barytonsaxofon <small>- Saxofonerna</small>
@@ -73,6 +74,7 @@ Orquestern
 A tiger-striped, full-scale, jazz-playing student orchestra. And Stockholm's oldest!
 
 Our orchestra consists of the following instruments:
+
 * Flutes
 * Clarinets
 * Alto, tenor, and baritone saxophones <small>- Saxofonerna</small>
@@ -95,9 +97,9 @@ Fill out the [form below](#form) or contact the [Orquesterchef](mailto:orquester
     <img src="/assets/images/otukt-orquestern.jpg" alt="Orquestern konsert VT25" class="image-frame"/>
     <figcaption class="figure-caption">
         {%- if page.sv -%}
-            Orquestern på Otukt, konserten 2024 (foto: Axel Boström)
+            Orquestern på Otukt, konserten 2025 (foto: Axel Boström)
         {%- else -%}
-            Orquestern at Otukt, the 2024 concert (photo: Axel Boström)
+            Orquestern at Otukt, the 2025 concert (photo: Axel Boström)
         {%- endif -%}
     </figcaption>
 </figure>
@@ -115,9 +117,9 @@ Baletten
     <img src="/assets/images/otukt-baletten.jpg" alt="Baletten konsert VT25" class="image-frame"/>
     <figcaption class="figure-caption">
         {%- if page.sv -%}
-            Baletten på Otukt, konserten 2024 (foto: Axel Boström)
+            Baletten på Otukt, konserten 2025 (foto: Axel Boström)
         {%- else -%}
-            Baletten at Otukt, the 2024 concert (photo: Axel Boström)
+            Baletten at Otukt, the 2025 concert (photo: Axel Boström)
         {%- endif -%}
     </figcaption>
 </figure>
