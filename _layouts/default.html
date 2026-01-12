@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% include head.html %}
-    <body>
-        {% include header.html %}
-        <main class="page-content" aria-label="Content" style="flex: 1 0 auto; width: 100%">
-            <div class="container">            
-                {{ content }}
-            </div>
-        </main>
-        {% include footer.html %}
-        {% include sub-footer.html %}
-    </body>
+{% include head.html %}
+
+<body>
+{% include header.html %}
+
+<main class="page-content" aria-label="Content">
+<div class="container">            
+{{ content }}
+</div>
+</main>
+
+{% include footer.html %}
+
+{% include sub-footer.html %}
+</body>
 </html>

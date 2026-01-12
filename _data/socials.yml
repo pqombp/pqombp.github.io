@@ -1,0 +1,47 @@
+facebook:
+  id: promenadorquestern
+  href: https://www.facebook.com/
+  title: Facebook
+  fa-brands: facebook
+
+instagram:
+  id: pq_officiell
+  href: https://www.instagram.com/
+  title: Instagram
+  fa-brands: instagram
+
+instagram-buss:
+  id: pqbussen
+  href: https://www.instagram.com/
+  title: Instagram (PQ-buss)
+  fa-icon: bus
+
+youtube:
+  id: '@pq_officiell'
+  href: https://www.youtube.com/
+  title: YouTube
+  fa-brands: youtube
+
+tiktok:
+  id: '@pqofficiell'
+  href: https://www.tiktok.com/
+  title: TikTok
+  fa-brands: tiktok
+
+spotify:
+  id: 1MuP2VJJAxrHsf4gwJzBU2
+  href: https://open.spotify.com/artist/
+  title: spotify
+  fa-brands: spotify
+
+wikipedia:
+  id: Promenadorquestern
+  href: https://sv.wikipedia.org/wiki/
+  title: Wikipedia
+  fa-brands: wikipedia-w
+
+# github:
+#   id: pqombp
+#   href: https://www.github.com/
+#   title: GitHub
+#   fa-brands: github
