@@ -1,3 +1,16 @@
+<figure class="text-center">
+    <img src="/assets/images/turne2025-dag4.jpg" alt="PQ på turné 2025" class="image-frame"/>
+    <figcaption class="figure-caption">
+        {%- if page.sv -%}
+            PQ på turné 2025, Tyskland (foto: Axel Boström)
+        {%- else -%}
+            PQ on our 2025 tour, Germany (photo: Axel Boström)
+        {%- endif -%}
+    </figcaption>
+</figure>
+
+~.~
+
 {%- if page.sv -%}
 
 ~.text.~
