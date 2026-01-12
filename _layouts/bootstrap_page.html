@@ -3,8 +3,8 @@ layout: default
 ---
 
 {%- comment -%}
-    `content` is already "markdownified". We undo any markdownification of the special codes ~.~ and ~.[TAG].~.
-    This means that special codes are required to be isolated paragraphs in the markdown document.
+    `content` is already "markdownified". We undo any markdownification of the special tags ~.~ and ~.[NAME].~.
+    This means that special tags are required to be isolated paragraphs in the markdown document.
 {%- endcomment -%}
 {%- assign content_array = content
     | replace: "<p>~.", "~."
@@ -13,30 +13,24 @@ layout: default
     | split: "~.~"
 -%}
 {%- for row_content in content_array -%}
-    <div class="row">
+<div class="row">
     {%- assign row_content_array = row_content | strip | split: "~." -%}
     {%- for column_data in row_content_array -%}
         {%- if column_data != "" -%}
             {%- assign column_aux = column_data | strip | split: ".~" -%}
-            {%- case column_aux[0] -%}
-                {%- when "text" %}
-                    <div class="col-xs-12 col-md-6 col-lg-7">
-                        {{ column_aux[1] | markdownify | strip }}
-                    </div>
-                {%- when "float.left" %}
-                    <div class="col-xs-12 col-md-6 col-lg-5 pull-lg-left">
-                        {{ column_aux[1] | markdownify | strip }}
-                    </div>
-                {%- when "float.right" %}
-                    <div class="col-xs-12 col-md-6 col-lg-5 pull-right">
-                        {{ column_aux[1] | markdownify | strip }}
-                    </div>
-                {%- else %}
-                    <div class="col-lg-12">
-                        {{ column_data | markdownify | strip }}
-                    </div>
-            {%- endcase -%}
+            {%- for item in site.data.tilde_dot_names -%}
+                {%- if column_aux[0] == item.name %}
+<div class="{{ item.class }}">
+{{ column_aux[1] | markdownify | strip }}
+</div>
+                    {%- break -%}
+                {%- elsif forloop.last %}
+<div class="{% assign var = site.data.tilde_dot_names | find: 'name', 'DEFAULT' %}{{ var.class }}">
+{{ column_data | markdownify | strip }}
+</div>
+                {%- endif -%}
+            {%- endfor -%}
         {%- endif -%}
     {%- endfor %}
-    </div>
-{%- endfor -%}
+</div>
+{% endfor -%}

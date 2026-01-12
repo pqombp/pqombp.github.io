@@ -106,8 +106,8 @@ This is done via Liquid templating: see the layout
 [`bootstrap_page.html`](/_layouts/bootstrap_page.html). In words, the code is
 translated into Bootstrap rows and columns. The tag `~.~` creates a new row,
 and the tags `~.[NAME].~` put all content, up until the next tag, into a
-Boostrap column. The available `[NAME]`s are: `text`, `float.right`, and
-`float.left`, which are translated into Bootstrap classes as shown above.
+Boostrap column. The full list of available `[NAME]`s can be found in
+[`_data/tilde_dot_names.csv`](/_data/tilde_dot_names.csv).
 
 > **WARNING:** Due to the hack-y nature of the extension, tilde-dot tags must
 > separated by blank lines on both sides *after* the Liquid templating is
