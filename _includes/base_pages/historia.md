@@ -73,6 +73,8 @@ Our music {#music}
 A musical treasure trove.
 {: .lead}
 
+~.~
+
 #### Albums
 
 Since 1956, PQ has released, among others, the following full-length albums.
@@ -86,6 +88,7 @@ Since 1956, PQ has released, among others, the following full-length albums.
 <figure class="album">
     <img src="/assets/images/albums/orepat-scaled.png" width="100%">
     <figcaption class="figure-caption">Orepat med Promenadorquestern (1976)</figcaption>
+    <a class="spotify" href="https://open.spotify.com/album/5MOBt6ykczF9mt7XsQmYjm">{% if page.sv %}Albumet finns tillgängligt på Spotify!{% else %}Available on Spotify!{% endif %} <span></span></a>
 </figure>
 
 ~.album.twoside.~
@@ -121,11 +124,6 @@ Baksidan
 8. Karlssons Sång
 {: .list-group}
 
-~.right.~
-
-<br>
-<a class="spotify" href="https://open.spotify.com/album/5MOBt6ykczF9mt7XsQmYjm">{% if page.sv %}Albumet finns tillgängligt på Spotify!{% else %}Available on Spotify!{% endif %} <span></span></a>
-
 ~.~
 
 ~.half.~
@@ -133,6 +131,7 @@ Baksidan
 <figure class="album">
     <img src="/assets/images/albums/osqrubbat-scaled.png" width="100%">
     <figcaption class="figure-caption">Osqrubbat med Promenadorquestern (1981)</figcaption>
+    <a class="spotify" href="https://open.spotify.com/album/3zLg1TcCSaC4L3QPQv6gKv">{% if page.sv %}Albumet finns tillgängligt på Spotify!{% else %}Available on Spotify!{% endif %} <span></span></a>
 </figure>
 
 ~.album.twoside.~
@@ -163,11 +162,6 @@ Vänster sida
 5. Zam...
 {: .list-group}
 
-~.right.~
-
-<br>
-<a class="spotify" href="https://open.spotify.com/album/3zLg1TcCSaC4L3QPQv6gKv">{% if page.sv %}Albumet finns tillgängligt på Spotify!{% else %}Available on Spotify!{% endif %} <span></span></a>
-
 ~.~
 
 ~.half.~
@@ -175,6 +169,7 @@ Vänster sida
 <figure class="album">
     <img src="/assets/images/albums/osquldsfullt-scaled.png" width="100%">
     <figcaption class="figure-caption">Osquldsfullt med Promenadorquestern (1986)</figcaption>
+    <a class="spotify" href="https://open.spotify.com/album/1G67TRfhlucQUktBE0Elqs">{% if page.sv %}Albumet finns tillgängligt på Spotify!{% else %}Available on Spotify!{% endif %} <span></span></a>
 </figure>
 
 ~.album.twoside.~
@@ -205,11 +200,6 @@ Andra sidan
 6. Värmlandsvisan
 {: .list-group}
 
-~.right.~
-
-<br>
-<a class="spotify" href="https://open.spotify.com/album/1G67TRfhlucQUktBE0Elqs">{% if page.sv %}Albumet finns tillgängligt på Spotify!{% else %}Available on Spotify!{% endif %} <span></span></a>
-
 ~.~
 
 ~.half.~
@@ -217,6 +207,7 @@ Andra sidan
 <figure class="album">
     <img src="/assets/images/albums/oerhort-scaled.png" width="100%">
     <figcaption class="figure-caption">Oerhört (1991)</figcaption>
+    <a class="spotify" href="https://open.spotify.com/album/4JuI4uulEMC4fZPlNukaBc">{% if page.sv %}Albumet finns tillgängligt på Spotify!{% else %}Available on Spotify!{% endif %} <span></span></a>
 </figure>
 
 ~.album.oneside.~
@@ -235,11 +226,6 @@ Andra sidan
 10. Saratoga Shout
 {: .list-group}
 
-~.right.~
-
-<br>
-<a class="spotify" href="https://open.spotify.com/album/4JuI4uulEMC4fZPlNukaBc">{% if page.sv %}Albumet finns tillgängligt på Spotify!{% else %}Available on Spotify!{% endif %} <span></span></a>
-
 ~.~
 
 ~.half.~
@@ -247,6 +233,7 @@ Andra sidan
 <figure class="album">
     <img src="/assets/images/albums/opluggat-scaled.png" width="100%">
     <figcaption class="figure-caption">Opluggat (1996)</figcaption>
+    <a class="spotify" href="https://open.spotify.com/album/67H6ea7ZTeoZvQ6ZH49fJt">{% if page.sv %}Albumet finns tillgängligt på Spotify!{% else %}Available on Spotify!{% endif %} <span></span></a>
 </figure>
 
 ~.album.oneside.~
@@ -269,16 +256,13 @@ Andra sidan
 14. Zambesi
 {: .list-group}
 
-~.right.~
-
-<br><a class="spotify" href="https://open.spotify.com/album/67H6ea7ZTeoZvQ6ZH49fJt">{% if page.sv %}Albumet finns tillgängligt på Spotify!{% else %}Available on Spotify!{% endif %} <span></span></a>
-
 ~.~
 
 ~.half.~
 <figure class="album">
     <img src="/assets/images/albums/oqult-scaled.png" width="100%">
     <figcaption class="figure-caption">Oqult (2001)</figcaption>
+    <a class="spotify" href="https://open.spotify.com/album/0JqiKGFiHgE0tK4onO6R01">{% if page.sv %}Albumet finns tillgängligt på Spotify!{% else %}Available on Spotify!{% endif %} <span></span></a>
 </figure>
 
 ~.album.oneside.~
@@ -298,7 +282,3 @@ Andra sidan
 11. Fidgety Feet
 12. Turkish Bath
 {: .list-group}
-
-~.right.~
-
-<br><a class="spotify" href="https://open.spotify.com/album/0JqiKGFiHgE0tK4onO6R01">{% if page.sv %}Albumet finns tillgängligt på Spotify!{% else %}Available on Spotify!{% endif %} <span></span></a>

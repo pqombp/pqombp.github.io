@@ -1,39 +1,41 @@
 <footer class="footer-divider footer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-1 hidden-md-down">
+            <div class="col-lg-1 d-none d-lg-block">
                 <a href="//thskth.se"><img src="/assets/images/site/THS.png" height="102"></a>
             </div>
-            <div class="col-lg-11 col-md-12" style="padding: 0;">
-                <div class="col-lg-4">
-                    <h5>{% if page.sv %}Kontakt{% else %}Contact{% endif %}</h5>
-                    <ul class="list-unstyled">
-                        <li>Directeur Matilda "GT" Bergsten</li>
-                        <li>+46 (0)70 654 44 14</li>
-                        <li><a href="mailto:dirren@pq.se"><i class="fa fa-envelope" style="margin-right: 8px"></i>dirren@pq.se</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-5">
-                    <h5>{% if page.sv %}Postadress{% else %}Postal address{% endif %}</h5>
-                    <ul class="list-unstyled">
-                        <li>Promenadorquestern och med Baletten Paletten</li>
-                        <li>Tekniska Högskolans Studentkår</li>
-                        <li>100 44 Stockholm</li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h5>{% if page.sv %}Betalning{% else %}Payment{% endif %}</h5>
-                    <ul class="list-unstyled">
-                        <li><strong>Bankgiro</strong> 5606-6012</li>
-                        <li><strong>Swish</strong> 123-156 99 46</li>
-                        <li><strong>{% if page.sv %}Org-nummer{% else %}Org. number{% endif %}</strong> 802448-0306</li>
-                    </ul>
+            <div class="col-md-12 col-lg-11">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h5>{% if page.sv %}Kontakt{% else %}Contact{% endif %}</h5>
+                        <ul class="list-unstyled">
+                            <li>Directeur Matilda "GT" Bergsten</li>
+                            <li>+46 (0)70 654 44 14</li>
+                            <li><a href="mailto:dirren@pq.se"><i class="fa fa-envelope" style="margin-right: 8px"></i>dirren@pq.se</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <h5>{% if page.sv %}Postadress{% else %}Postal address{% endif %}</h5>
+                        <ul class="list-unstyled">
+                            <li>Promenadorquestern och med Baletten Paletten</li>
+                            <li>Tekniska Högskolans Studentkår</li>
+                            <li>100 44 Stockholm</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>{% if page.sv %}Betalning{% else %}Payment{% endif %}</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Bankgiro</strong> 5606-6012</li>
+                            <li><strong>Swish</strong> 123-156 99 46</li>
+                            <li><strong>{% if page.sv %}Org-nummer{% else %}Org. number{% endif %}</strong> 802448-0306</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12">
-                <p class="pull-right"><a href="#"><i class="fa-solid fa-chevron-up" style="margin-right: 8px"></i>{% if page.sv %}Gå till toppen{% else %}Back to top{% endif %}</a></p>
+            <div class="col-12">
+                <div class="pull-right"><a href="#"><i class="fa-solid fa-chevron-up" style="margin-right: 8px"></i>{% if page.sv %}Gå till toppen{% else %}Back to top{% endif %}</a></div>
                 <div class="socials-menu">
                     {%- comment %}Social media icon code from https://jreel.github.io/social-media-icons-on-jekyll/{% endcomment -%}
                     {%- assign sm = site.data.socials -%}

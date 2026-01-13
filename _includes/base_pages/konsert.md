@@ -66,18 +66,20 @@ More of our music can be found on the [history page]({{ site.dir }}history#music
 
 {% endif %}
 
-<div class="col-xs-5">
-    <figure class="text-center">
-    <img classs="image-frame" src="/assets/images/albums/opluggat.png" width="100%">
-    <figcaption style="padding-top: 12px" class="figure-caption">Opluggat (1996)</figcaption>
-    </figure>
-</div>
+<div class="row">
+    <div class="col-5">
+        <figure class="text-center">
+        <img classs="image-frame" src="/assets/images/albums/opluggat.png" width="100%">
+        <figcaption style="padding-top: 12px" class="figure-caption">Opluggat (1996)</figcaption>
+        </figure>
+    </div>
 
-<div class="col-xs-7">
-    <figure class="text-center">
-    <img classs="image-frame" src="/assets/images/albums/osqrubbat.png" width="100%">
-    <figcaption class="figure-caption">Osqrubbat (1981)</figcaption>
-    </figure>
+    <div class="col-7">
+        <figure class="text-center">
+        <img classs="image-frame" src="/assets/images/albums/osqrubbat.png" width="100%">
+        <figcaption class="figure-caption">Osqrubbat (1981)</figcaption>
+        </figure>
+    </div>
 </div>
 
 ~.float.right.~

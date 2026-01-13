@@ -97,6 +97,7 @@ only screen and (         min-device-pixel-ratio: 1.3 ), only screen and ( min-r
 
 .figure-caption {
     padding-left: 5px;
+    text-align: left;
 }
 
 .logo {
@@ -173,9 +174,6 @@ a:focus, a:focus i {
 
 .navbar-toggler {
     color: #ebad39;
-}
-
-.navbar-toggler {
     float: right;
 }
 
@@ -228,6 +226,10 @@ a:focus, a:focus i {
 
 .album {
     padding: 20px;
+    text-align: center;
+}
+
+.album .figure-caption {
     text-align: center;
 }
 

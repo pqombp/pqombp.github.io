@@ -41,6 +41,8 @@ We rehearse every Wednesday from 18:00 in musikrummet and tidningsrummet in the 
     </figcaption>
 </figure>
 
+~.~
+
 ~.text.~
 
 {% if page.sv %}
@@ -111,21 +113,6 @@ Fill out the [form below](#form) or contact the [Orquesterchef](mailto:orquester
 Baletten
 --------
 
-~.float.left.~
-
-<figure class="text-center">
-    <img src="/assets/images/otukt-baletten.jpg" alt="Baletten konsert VT25" class="image-frame"/>
-    <figcaption class="figure-caption">
-        {%- if page.sv -%}
-            Baletten på Otukt, konserten 2025 (foto: Axel Boström)
-        {%- else -%}
-            Baletten at Otukt, the 2025 concert (photo: Axel Boström)
-        {%- endif -%}
-    </figcaption>
-</figure>
-
-~.text.right.~
-
 {% if page.sv %}
 
 Baletten Paletten är en showdansgrupp och dansar för det mesta koreograferad traditionell jazz till orquesterns ljud och oljud.
@@ -147,6 +134,17 @@ Fill out the [form below](#form) or contact the [Balettchef](mailto:orquester@pq
 {% endif %}
 
 ~.float.left.~
+
+<figure class="text-center">
+    <img src="/assets/images/otukt-baletten.jpg" alt="Baletten konsert VT25" class="image-frame"/>
+    <figcaption class="figure-caption">
+        {%- if page.sv -%}
+            Baletten på Otukt, konserten 2025 (foto: Axel Boström)
+        {%- else -%}
+            Baletten at Otukt, the 2025 concert (photo: Axel Boström)
+        {%- endif -%}
+    </figcaption>
+</figure>
 
 <!-- <figure class="text-center">
     <img src="/assets/images/turne2025-dag1.jpg" alt="Baletten på turné 2025" class="image-frame"/>
@@ -171,21 +169,6 @@ Improvised music
 ----------------
 {% endif %}
 
-~.float.right.~
-
-<figure class="text-center">
-    <img src="/assets/images/KTH-Innovation-1.jpeg" alt="Jamgig för KTH Innovation" class="image-frame"/>
-    <figcaption class="figure-caption">
-        {%- if page.sv -%}
-            Jamgig för KTH Innovation, december 2024 (foto: Isaac Ren)
-        {%- else -%}
-            Jam gig for KTH Innovation, December 2024 (photo: Isaac Ren)
-        {%- endif -%}
-    </figcaption>
-</figure>
-
-~.text.~
-
 {% if page.sv %}
 
 För att stilla en studentorkestermedlems oändliga spelglädje började Promenadorquestern även ha jamrep. Där spelas det i en mindre sättning vilket möjliggör en större frihet inom musicerandet.
@@ -204,6 +187,19 @@ Please contact the [Jamansvarig](mailto:jam@pq.se) for further information about
 
 {% endif %}
 
+~.float.right.~
+
+<figure class="text-center">
+    <img src="/assets/images/KTH-Innovation-1.jpeg" alt="Jamgig för KTH Innovation" class="image-frame"/>
+    <figcaption class="figure-caption">
+        {%- if page.sv -%}
+            Jamgig för KTH Innovation, december 2024 (foto: Isaac Ren)
+        {%- else -%}
+            Jam gig for KTH Innovation, December 2024 (photo: Isaac Ren)
+        {%- endif -%}
+    </figcaption>
+</figure>
+
 ~.~
 
 ~.text.right.wide.~
@@ -214,6 +210,16 @@ Bussgruppen
 {% else %}
 Bus group
 ---------
+{% endif %}
+
+{% if page.sv %}
+
+Visst har du sett [PQ-bussen]({{ site.dir }}buss)? En såpass fin buss tar ju inte hand om sig själv - därför ser Bussgruppen till att den är väglaglig, festbar och turnéredo. Intresserad? Kontakta [Bussis](mailto:bussis@pq.se) för mer information.
+
+{% else %}
+
+Have you seen the [PQ bus]({{ site.dir }}bus)? Such a fine specimen does not take care of itself - it is up to the bus group to make sure that the bus is safe on the road, fit for partying, and ready for tours. Interested? Contact [Bussis](mailto:bussis@pq.se) for more information.
+
 {% endif %}
 
 ~.float.left.thin.~
@@ -228,18 +234,6 @@ Bus group
         {%- endif -%}
     </figcaption>
 </figure>
-
-~.text.right.wide.~
-
-{% if page.sv %}
-
-Visst har du sett [PQ-bussen]({{ site.dir }}buss)? En såpass fin buss tar ju inte hand om sig själv - därför ser Bussgruppen till att den är väglaglig, festbar och turnéredo. Intresserad? Kontakta [Bussis](mailto:bussis@pq.se) för mer information.
-
-{% else %}
-
-Have you seen the [PQ bus]({{ site.dir }}bus)? Such a fine specimen does not take care of itself - it is up to the bus group to make sure that the bus is safe on the road, fit for partying, and ready for tours. Interested? Contact [Bussis](mailto:bussis@pq.se) for more information.
-
-{% endif %}
 
 ~.~
 

@@ -1,16 +1,16 @@
 name,class
 DEFAULT,col-lg-12
-text,col-xs-12 col-md-6 col-lg-7
-text.left,col-xs-12 col-md-6 col-lg-7
-text.left.wide,col-xs-12 col-md-7 col-lg-9
-text.right,col-xs-12 col-md-6 col-lg-7 pull-right
-text.right.wide,col-xs-12 col-md-7 col-lg-9 pull-right
-float.left,col-xs-12 col-md-6 col-lg-5 pull-left
-float.left.thin,col-xs-12 col-md-5 col-lg-3 pull-left
-float.right,col-xs-12 col-md-6 col-lg-5 pull-right
-float.right.thin,col-xs-12 col-md-5 col-lg-3 pull-right
+text,col-xs-12 col-md-6 col-lg-7 order-md-first
+text.left,col-xs-12 col-md-6 col-lg-7 order-md-first
+text.left.wide,col-xs-12 col-md-7 col-lg-9 order-md-first
+text.right,col-xs-12 col-md-6 col-lg-7 order-md-last
+text.right.wide,col-xs-12 col-md-7 col-lg-9 order-md-last
+float.left,col-xs-12 col-md-6 col-lg-5 float-left order-md-first
+float.left.thin,col-xs-12 col-md-5 col-lg-3 float-left order-md-first
+float.right,col-xs-12 col-md-6 col-lg-5 order-md-last
+float.right.thin,col-xs-12 col-md-5 col-lg-3 order-md-last
 half,col-xs-12 col-lg-6
 left,col-xs-12 col-lg-6
-right,col-xs-12 col-lg-6 pull-right
+right,col-xs-12 col-lg-6
 album.twoside,col-xs-6 col-md-offset-1 col-lg-offset-0 col-sm-offset-0 col-md-5 col-lg-3
 album.oneside,col-xs-12 col-md-offset-1 col-lg-offset-0 col-sm-offset-0 col-md-11 col-lg-6
