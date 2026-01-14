@@ -63,7 +63,7 @@ I vår orquester har vi följande instrument:
 
 Vi söker aktivt nya medlemmar inom flera av sektionerna. Du är mycket välkommen på ett onsdagsrep i Musikrummet i kårhus Nymble för att provspela med oss!
 
-Om du är inte har tillgång till ett instrument finns det ett begränsat antal instrument att låna vid behov.
+Om du inte har tillgång till ett instrument finns det ett begränsat antal instrument att låna vid behov.
 
 ***Intresserad?***<br>
 Fyll i [formuläret längre ner på sidan](#form) eller kontakta [Orquesterchefen](mailto:orquester@pq.se).
