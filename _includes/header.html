@@ -7,19 +7,16 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
             ☰
         </button>
-        <!-- <button class="navbar-toggler hidden-md-up" type="button" style="height: 72px" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
-            ☰
-        </button> -->
-        <div class="collapse navbar-collapse" id="navbar-header">
+       <div class="collapse navbar-collapse" id="navbar-header">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             {%- for item in site.data.page_translations %}
-                <li class="nav-item" style="text-align: right;">
+                <li class="nav-item">
                     <a class="nav-link" href="{{ page.dir }}{% if page.sv %}{{ item.sv_name }}{% else %}{{ item.en_name }}{% endif %}">
                         {%- if page.sv -%}
-                            {{- item.sv_title -}}
+                            <span class="nav-text">{{- item.sv_title -}}</span>
                             {%- if item.sv_title == page.title -%}<span class="sr-only">(current)</span>{%- endif -%}
                         {%- else -%}
-                            {{- item.en_title -}}
+                            <span class="nav-text">{{- item.en_title -}}</span>
                             {%- if item.en_title == page.title -%}<span class="sr-only">(current)</span>{%- endif -%}
                         {%- endif -%}
                     </a>
