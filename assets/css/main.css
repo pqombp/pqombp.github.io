@@ -255,6 +255,13 @@ a:focus, a:focus i {
 
 .jumbotron {
     background-color: rgba(0, 0, 0, 0.8);
+    border-width: thick !important;
+    border-color: #ebad39 !important;
+}
+
+.jumbotron .btn {
+    color: black;
+    background-color: #ebad39;
 }
 
 .card {
