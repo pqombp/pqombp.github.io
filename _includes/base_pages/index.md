@@ -21,7 +21,7 @@ Ny på KTH? Spelar Du ett instrument och har storbands-/orkestererfarenhet eller
 
 <a class="btn btn-lg btn-warning" href="{{ site.dir }}ga-med" role="button" style="color: black;">Mer information</a>
 
-Välkomna till vårt öppet rep på onsdag den 21/1 i Nymble!
+Välkomna till våra öppna rep på onsdagar den 21/1 och 28/1 kl 17.45 i Nymble!
 
 {% else %}
 
@@ -33,7 +33,7 @@ New to KTH? Do you play an instrument and have bigband/orchestra experience or d
 
 <a class="btn btn-lg btn-warning" href="{{ site.dir }}join-us" role="button" style="color: black;">More information</a>
 
-You are welcome to our open rehearsal on Wednesday, January 21st at 18:00 in Nymble!
+You are welcome to our open rehearsals on Wednesdays 21/01 and 28/01, at 17:45 in Nymble!
 
 {% endif %}
 
