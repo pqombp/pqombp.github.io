@@ -36,8 +36,9 @@ Musiken
 -------
 
 En musikskatt. En fullträff.
+{: .lead}
 
-Promenadorquestern har många egenarrangerade eller egenkomponerade låtar som genom åren släppts på flera [skivor](https://www.pq.se/historia#skivor). En av de tidigaste skivorna, World of Brass, släpptes redan år 1957.
+Promenadorquestern har många egenarrangerade eller egenkomponerade låtar som genom åren släppts på flera [skivor]({{ site.dir }}historia/#skivor). En av de tidigaste skivorna, World of Brass, släpptes redan år 1957.
 
 
 ### Repertoar
@@ -46,14 +47,14 @@ Vår musik är till stor del dixieland-jazz med några inslag av mer modern jazz
 
 Nuförtiden finns en stor del av denna samling väldoftande musik på Spotify. Ja, varför lyssnar du inte redan på [Idomin](https://open.spotify.com/track/5XStRh6wMx9KUOtrU2lDnu) eller [Bye Bye Blackbird](https://open.spotify.com/track/5dlyfPqoJHtqlVOoQTaBSf)?
 
-Mer av musiken finns på sidan om vår [historia]({{ site.dir }}historia#musik).
+Mer av musiken finns på sidan om vår [historia]({{ site.dir }}historia#skivor).
 
 {% else %}
 
 Music
 -----
 
-PQ plays mostly self-arranged or self-composed pieces which, throughout the years, have been released as several [albums](https://www.pq.se/historia#skivor). One of the earliest records, World of Brass, was released in 1957.
+PQ plays mostly self-arranged or self-composed pieces which, throughout the years, have been released as several [albums]({{ site.dir }}history#albums). One of the earliest records, World of Brass, was released in 1957.
 
 
 ### Repertoire
@@ -62,7 +63,7 @@ Our music is for the most part Dixieland jazz, with some touches of more modern 
 
 A lot of this lovely music can be found on Spotify and YouTube Music. Why not listen to [Idomin](https://open.spotify.com/track/5XStRh6wMx9KUOtrU2lDnu) or [Bye Bye Blackbird](https://open.spotify.com/track/5dlyfPqoJHtqlVOoQTaBSf)?
 
-More of our music can be found on the [history page]({{ site.dir }}history#music).
+More of our music can be found on the [history page]({{ site.dir }}history#albums).
 
 {% endif %}
 

@@ -51,7 +51,7 @@ När Offenbachs Can-Can inköpts 1958 kom Olle och Brita Naess på att orquester
 
 {% if page.sv %}
 
-Musiken {#musik}
+Musiken {#skivor}
 -------
 
 En musikskatt.
@@ -67,7 +67,7 @@ Sedan 1956 har PQ släppt bland annat fullängdsalbumen nedan.
 
 {% else %}
 
-Our music {#music}
+Our music {#albums}
 ---------
 
 A musical treasure trove.
