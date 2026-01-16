@@ -5,7 +5,7 @@ Konserter och framträdanden
 
 ~.~
 
-Vår nästa konsert äger rum den 25:e april 2026! Köp dina biljetter här: [ticket.pq.se](ticket.pq.se).
+Vår nästa konsert äger rum den 25:e april 2026! Köp dina biljetter här: [ticket.pq.se](https://ticket.pq.se).
 
 Här är vår konsert från 2024:
 
@@ -18,7 +18,7 @@ Concerts and shows
 
 ~.~
 
-Our next concert will take place on April 25th, 2026! Buy your tickets now: [ticket.pq.se](ticket.pq.se).
+Our next concert will take place on April 25th, 2026! Buy your tickets now: [ticket.pq.se](https://ticket.pq.se).
 
 Here is our concert from 2024:
 
