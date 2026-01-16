@@ -81,22 +81,22 @@ will produce the following HTML:
 
 ```
 <div class="row">
-    <div class="col-lg-12">
+    <div class="col-12">
         <h1 id="title">Title</h1>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-xs-12 col-md-6 col-lg-7">
+    <div class="col-12 col-md-6 col-lg-7 md-first">
         <p>Text with dynamic width</p>
     </div>
-    <div class="col-xs-12 col-md-6 col-lg-5 pull-right">
+    <div class="col-12 col-md-6 col-lg-5 md-last">
         <p>Float on the right</p>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-lg-12">
+    <div class="col-12">
         <p>Full-width text</p>
     </div>
 </div>
