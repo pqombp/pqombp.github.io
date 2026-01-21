@@ -45,9 +45,10 @@ URL) and titles (i.e. what appears on the browser tab) in
 CSV file and generates the two versions of the page. Only the English
 versions get a subdirectory, `en/`.
 
-**Note:** Currently, all pages in `_data/page_translations.csv` are also
-added to the navigation bar. This should be addressed in the future, where we
-would also want to customize the navigation bar a bit more.
+> [!NOTE]
+> Currently, all pages in `_data/page_translations.csv` are also added to the
+> navigation bar. This should be addressed in the future, where we would also
+> want to customize the navigation bar a bit more.
 
 Custom Markdown extension ("tilde-dot")
 ---------------------------------------
@@ -109,10 +110,11 @@ and the tags `~.[NAME].~` put all content, up until the next tag, into a
 Boostrap column. The full list of available `[NAME]`s can be found in
 [`_data/tilde_dot_names.csv`](/_data/tilde_dot_names.csv).
 
-> **WARNING:** Due to the hack-y nature of the extension, tilde-dot tags must
-> separated by blank lines on both sides *after* the Liquid templating is
-> processed. Essentially, if there were no processing, each tag should be
-> surrounded by its own `<p>...<\p>`.
+> [!WARNING]
+> Due to the hack-y nature of the extension, tilde-dot tags must be separated
+> by blank lines on both sides *after* the Liquid templating is processed.
+> Essentially, if there were no processing, each tag should be surrounded by
+> its own `<p>...<\p>`.
 
 In the actual website, all of the `base_pages` use the `boostrap_page` layout;
 this is decided by the `page_translations.rb` plugin. The order in which
