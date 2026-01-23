@@ -1,6 +1,6 @@
-{%- if page.sv -%}
-
 ~.text.~
+
+{% if page.sv %}
 
 Historia
 ========
@@ -8,8 +8,6 @@ Historia
 Sedan 1956 har Promenadorquestern, denna samling individualister som aldrig upphör att förvåna och förskräcka sin omgivning med studentikosa upptåg och lustigheter, satt gulsvart färg på KTH. Men hur började det egentligen, och varför?
 
 {%- else -%}
-
-~.text.~
 
 History
 =======
@@ -259,6 +257,7 @@ Andra sidan
 ~.~
 
 ~.half.~
+
 <figure class="album">
     <img src="/assets/images/albums/oqult-scaled.png" width="100%">
     <figcaption class="figure-caption">Oqult (2001)</figcaption>

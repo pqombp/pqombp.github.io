@@ -11,8 +11,6 @@ Här är vår konsert från 2024:
 
 {%- else -%}
 
-~.text.~
-
 Concerts and shows
 ==================
 

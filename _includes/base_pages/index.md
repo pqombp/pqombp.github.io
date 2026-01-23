@@ -39,9 +39,9 @@ You are welcome to our open rehearsals on Wednesdays 21/01 and 28/01, at 17:45 i
 
 ~.~
 
-{%- if page.sv -%}
-
 ~.text.~
+
+{%- if page.sv -%}
 
 **Promenadorquestern och med Baletten Paletten** (PQ) är Tekniska Högskolans Studentkårs, vid Kungliga Tekniska högskolan i Stockholm, officiella studentorkester. Vi är en blåsorkester och dansgrupp som spelar jazz, med inslag av både klassiska och mer modernare stilar.
 
@@ -52,8 +52,6 @@ Vi har spelningar året om, oftast för företag eller på festivaler. Vi utför
 Under tiden, lyssna på våra största bangers:
 
 {%- else -%}
-
-~.text.~
 
 **Promenadorquestern och med Baletten Paletten** (PQ) at KTH Royal Institute of Technology is the THS Student Union’s official student orchestra. We are a wind orchestra with a dance group that performs jazz, with elements of both classical and more modern styles.
 
