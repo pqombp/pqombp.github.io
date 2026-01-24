@@ -3,7 +3,6 @@ layout: main
 title: Historia
 en_title: History
 en_slug: history
-menu: true
 ---
 
 ~.text.~

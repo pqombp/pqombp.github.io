@@ -2,7 +2,6 @@
 layout: main
 title: Hem
 en_title: Home
-menu: true
 ---
 
 <figure class="text-center">

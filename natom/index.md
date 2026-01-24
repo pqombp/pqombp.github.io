@@ -2,7 +2,6 @@
 layout: natom
 title: NATOM 2026
 en_title: NATOM 2026
-menu: false
 ---
 
 NATOM 2026
