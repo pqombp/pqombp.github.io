@@ -1,3 +1,11 @@
+---
+layout: main
+title: Konserter och framträdanden
+en_title: Concerts and shows
+en_slug: concert
+menu: true
+---
+
 {%- if page.sv -%}
 
 Konserter och framträdanden

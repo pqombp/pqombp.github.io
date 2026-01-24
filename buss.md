@@ -1,3 +1,11 @@
+---
+layout: main
+title: Bussen
+en_title: Bus
+en_slug: bus
+menu: true
+---
+
 {%- if page.sv -%}
 
 Bussen

@@ -1,3 +1,11 @@
+---
+layout: main
+title: Boka oss
+en_title: Book us
+en_slug: book-us
+menu: true
+---
+
 {%- if page.sv -%}
 
 Boka oss

@@ -1,3 +1,11 @@
+---
+layout: main
+title: Gå med
+en_title: Join us
+en_slug: join-us
+menu: true
+---
+
 {%- if page.sv -%}
 
 Gå med i PQ

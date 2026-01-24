@@ -1,3 +1,10 @@
+---
+layout: main
+title: Hem
+en_title: Home
+menu: true
+---
+
 <figure class="text-center">
     <img src="/assets/images/turne2025-dag4.jpg" alt="PQ på turné 2025" class="image-frame"/>
     <figcaption class="figure-caption">
@@ -41,7 +48,7 @@ You are welcome to our open rehearsals on Wednesdays 21/01 and 28/01, at 17:45 i
 
 ~.text.~
 
-{%- if page.sv -%}
+{% if page.sv -%}
 
 **Promenadorquestern och med Baletten Paletten** (PQ) är Tekniska Högskolans Studentkårs, vid Kungliga Tekniska högskolan i Stockholm, officiella studentorkester. Vi är en blåsorkester och dansgrupp som spelar jazz, med inslag av både klassiska och mer modernare stilar.
 
