@@ -1,37 +1,32 @@
-# frozen_string_literal: true
-
 # https://talk.jekyllrb.com/t/how-to-create-a-page-from-a-generator-plugin/6053
 module TranslationsPlugin
   class TranslatedPageGenerator < Jekyll::Generator
     safe true
 
     def generate(site)
-      translations = site.data['page_translations']
-      translations.each do |item|
-        sv_name = item['sv_name'].nil? ? 'index' : item['sv_name']
-        sv_title = item['sv_title']
-        en_name = item['en_name'].nil? ? 'index' : item['en_name']
-        en_title = item['en_title']
+      site.pages.each do |item|
+        if !item.data.include?("sv") # unprocessed page
+          item.data['sv'] = true
+          item.data['slug'] = item.basename
+          if item['en_title'] || item['en_slug'] # English translations are indicated by having one of these
+            en_title = item['en_title'].nil? ? item['title'] : item['en_title']
+            en_slug = item['en_slug'].nil? ? item.basename : item['en_slug']
+            item.data['en_title'] = en_title
+            item.data['en_slug'] = en_slug
 
-        # sv page
-        site.pages << Jekyll::PageWithoutAFile.new(site, site.source, '.', sv_name + '.md').tap do |file|
-            file.data.merge!(
-                "layout" => "bootstrap_page",
-                "title" => sv_title,
-                "sv" => true
-            )
-            file.content = File.read(File.expand_path("../_includes/base_pages/#{sv_name}.md", __dir__))
-            file.output
-        end
-
-        # en page
-        site.pages << Jekyll::PageWithoutAFile.new(site, site.source, 'en', en_name + '.md').tap do |file|
-            file.data.merge!(
-                "layout" => "bootstrap_page",
-                "title" => en_title
-            )
-            file.content = File.read(File.expand_path("../_includes/base_pages/#{sv_name}.md", __dir__))
-            file.output
+            # Inherit data from Swedish page
+            data = item.data.clone
+            
+            # Create new page
+            site.pages << Jekyll::PageWithoutAFile.new(site, site.source, 'en' + item.dir, en_slug + '.md').tap do |file|
+              file.data.merge!(
+                data,
+                "title" => en_title,
+                "sv" => false
+              )
+              file.content = item.content
+            end
+          end
         end
       end
     end

@@ -1,0 +1,13 @@
+main:
+  path: /
+  pages:
+  - slug: index
+  - slug: historia
+  - slug: konsert
+  - slug: buss
+  - slug: ga-med
+  - slug: boka
+
+natom:
+  path: /natom/
+  pages:

@@ -7,17 +7,29 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
             ☰
         </button>
-       <div class="collapse navbar-collapse" id="navbar-header">
+        <div class="collapse navbar-collapse" id="navbar-header">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            {%- for item in site.data.page_translations %}
+            {%- for item in site.data.nav[layout.nav].pages -%}
+                {%- assign item_page = site.pages | where: "dir", site.data.nav[layout.nav].path | find: "slug", item.slug %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ page.dir }}{% if page.sv %}{{ item.sv_name }}{% else %}{{ item.en_name }}{% endif %}">
+                    <a class="nav-link" href="
                         {%- if page.sv -%}
-                            <span class="nav-text">{{- item.sv_title -}}</span>
-                            {%- if item.sv_title == page.title -%}<span class="sr-only">(current)</span>{%- endif -%}
+                            {{- site.data.nav[layout.nav].path -}}
+                            {%- unless item_page.slug == 'index' -%}
+                                {{- item_page.slug -}}
+                            {%- endunless -%}
                         {%- else -%}
-                            <span class="nav-text">{{- item.en_title -}}</span>
-                            {%- if item.en_title == page.title -%}<span class="sr-only">(current)</span>{%- endif -%}
+                            /en{{- site.data.nav[layout.nav].path -}}
+                            {%- unless item_page.en_slug == 'index' -%}
+                                {{- item_page.en_slug -}}
+                            {%- endunless -%}
+                        {%- endif -%}">
+                        {%- if page.sv -%}
+                            <span class="nav-text">{{- item_page.title -}}</span>
+                            {%- if item_page.slug == page.slug -%}<span class="sr-only">(current)</span>{%- endif -%}
+                        {%- else -%}
+                            <span class="nav-text">{{- item_page.en_title -}}</span>
+                            {%- if item_page.en_slug == page.en_slug -%}<span class="sr-only">(current)</span>{%- endif -%}
                         {%- endif -%}
                     </a>
                 </li>
@@ -27,11 +39,15 @@
     </nav>
     <a style="padding:0px; float:right" href="
         {%- if page.sv -%}
-            {%- assign item = site.data.page_translations | find: 'sv_title', page.title -%}
-            /en/{{- item.en_name }}
+            /en{{- site.data.nav[layout.nav].path -}}
+            {%- unless page.en_slug == 'index' -%}
+                {{- page.en_slug -}}
+            {%- endunless -%}
         {%- else -%}
-            {%- assign item = site.data.page_translations | find: 'en_title', page.title -%}
-            /{{- item.sv_name }}
+            {{- site.data.nav[layout.nav].path -}}
+            {%- unless page.slug == 'index' -%}
+                {{- page.slug -}}
+            {%- endunless -%}
         {%- endif -%}
     ">
         {%- if page.sv -%}
