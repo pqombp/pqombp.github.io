@@ -8,8 +8,9 @@ GitHub Action for Jekyll (i.e., **NOT** the default GitHub pages workflow).
 Documentation hints
 -------------------
 
-This website has three features that need some explanation:
+This website has some features that need explanation:
 - redirects to other URLs;
+- layouts for navigation bars;
 - Swedish and English translations of each page;
 - a custom Markdown extension.
 
@@ -23,9 +24,12 @@ pages do not allow 301 redirects. The redirects are stored in
 [`_plugins/redirect.rb`](/_plugins/redirect.rb). Edit the CSV file to modify
 the available redirects.
 
-**Translations** are implemented as follows. The user writes a file in
-[`_includes/base_pages/`](_includes/base_pages/) that includes both Swedish and
-English translations, toggled by Liquid tags:
+The **navigation bar** in the header is determined by the file
+[`_data/nav.yml`](/_data/nav.yml), and by the layout that each page uses.
+
+**Translations** are implemented as follows. The user writes a file in the
+main directory that includes both Swedish and English translations, toggled by
+Liquid tags:
 
 ```
 {%- if page.sv -%}
@@ -34,29 +38,42 @@ English translations, toggled by Liquid tags:
     English content here
 {%- endif -%}
 ```
-*Side note: the dash (`-`) symbols in the Liquid tags tell Liquid to ignore
-all whitespace outside of the tag. This lets us format the Liquid content
-without affecting the formatting of the generated output.*
-
-The user then adds the Swedish and English names (i.e. what appears in the
-URL) and titles (i.e. what appears on the browser tab) in
-[`_data/page_translations.csv`](/_data/page_translations.csv). The plugin
-[`_plugins/page_translations.rb`](/_plugins/page_translations.rb) reads the
-CSV file and generates the two versions of the page. Only the English
-versions get a subdirectory, `en/`.
 
 > [!NOTE]
-> Currently, all pages in `_data/page_translations.csv` are also added to the
-> navigation bar. This should be addressed in the future, where we would also
-> want to customize the navigation bar a bit more.
+> The dash (`-`) symbols in the Liquid tags tell Liquid to ignore all
+> whitespace outside of the tag. This lets us format the Liquid content
+> without affecting the formatting of the generated output.
+> 
+> If you are having any formatting issues, it might be due to interactions
+> between [tilde-dot](#custom-markdown-extension-tilde-dot), Liquid tags, and
+> Markdown syntax. Make sure that you are not ignoring important whitespace
+> around headings, tilde-dot tags, etc.
+
+The user then adds the following variables to the page's front matter:
+
+* `title`, the Swedish title
+* either `en_title` or `en_slug`, the English title and the English slug
+  (the part of the URL between the last `/` and `.html`). Including either one
+  of these variables will cause the English version of the page to be created.
+
+The plugin [`_plugins/page_translations.rb`](/_plugins/page_translations.rb)
+goes through each page and determines if it needs an English translation. Only
+the English versions get a subdirectory, `en/`.
+
+> [!NOTE]
+> The translation plugin also automatically creates a `slug` variable for the
+> Swedish versions of pages. This seems to be a missing feature in Jekyll
+> (slugs are defined for posts, but not pages).
 
 Custom Markdown extension ("tilde-dot")
 ---------------------------------------
 
 In order to have slightly richer webpages, I have implemented a basic Markdown
-extension, which I am calling tilde-dot. This extension implements some basic
-elements of [Bootstrap](https://getbootstrap.com/). For example, on a Markdown
-page with `layout: bootstrap_page`, the code
+extension, which I am calling **tilde-dot**. This extension implements some
+basic elements of [Bootstrap](https://getbootstrap.com/). Pages are processed
+by tilde-dot when they include [`tilde-dot.html`](/_includes/tilde-dot.html).
+In practice, the user will call a layout that includes tilde-dot. For example,
+on a Markdown page with `layout: main`, the code
 
 ```
 Title
@@ -104,7 +121,7 @@ will produce the following HTML:
 ```
 
 This is done via Liquid templating: see the layout
-[`bootstrap_page.html`](/_layouts/bootstrap_page.html). In words, the code is
+[`tilde-dot.html`](/_includes/tilde-dot.html). In words, the code is
 translated into Bootstrap rows and columns. The tag `~.~` creates a new row,
 and the tags `~.[NAME].~` put all content, up until the next tag, into a
 Boostrap column. The full list of available `[NAME]`s can be found in
@@ -113,13 +130,6 @@ Boostrap column. The full list of available `[NAME]`s can be found in
 > [!WARNING]
 > Due to the hack-y nature of the extension, tilde-dot tags must be separated
 > by blank lines on both sides *after* the Liquid templating is processed.
-> Essentially, if there were no processing, each tag should be surrounded by
-> its own `<p>...<\p>`.
-
-In the actual website, all of the `base_pages` use the `boostrap_page` layout;
-this is decided by the `page_translations.rb` plugin. The order in which
-things are processed is:
-1. From a `base_page`, the translation is selected, i.e. the
-  `{{ if page.sv }} ... {{ else }} ... {{ endif }}` blocks are computed
-2. `bootstrap_page.html` then translates the tilde-dot tags into Bootstrap
-  elements.
+> Essentially, if there were no extra processing, each tag should be
+> surrounded by its own `<p>...<\p>`. In particular, make sure that your
+> Liquid tags are preserving necessary whitespace!
