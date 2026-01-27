@@ -1,5 +1,5 @@
 {%- comment -%}
-    `content` is already "markdownified". We undo any markdownification of the special tags ~.~ and ~.[NAME].~.
+    `include.content` is already "markdownified". We undo any markdownification of the special tags ~.~ and ~.[NAME].~.
     This means that special tags are required to be isolated paragraphs in the markdown document.
 {%- endcomment -%}
 {%- assign content_array = include.content
