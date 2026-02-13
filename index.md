@@ -19,27 +19,27 @@ en_title: Home
 
 {% if page.sv %}
 
-Vi rekryterar!
-==============
+Omstart — PQ:s 70-årsjubileum!
+=============================
 
-Ny på KTH? Spelar Du ett instrument och har storbands-/orkestererfarenhet eller dansar Du?
+Vår nästa konsert äger rum den 25:e april 2026! Köp dina biljetter här:
 {: .lead}
 
-<a class="btn btn-lg" href="{{ site.dir }}ga-med" role="button">Mer information</a>
+<a class="btn btn-lg" href="https://ticket.pq.se" role="button">Biljetter</a>
 
-Välkomna till våra öppna rep på onsdagar den 21/1 och 28/1 kl 17.45 i Nymble!
+*Nyfiken på vad som hände med Palettan du hängde med för 10 år sedan? Tänker du på den där söta trumpetaren som du inte har sett på 20 år? Undrar du vem du kommer att träffa på PQ-konserten? Kom bara så får du se...*
 
 {% else %}
 
-We are recruiting!
-==================
+Omstart — PQ's 70-year jubilee!
+===============================
 
-New to KTH? Do you play an instrument and have bigband/orchestra experience or do you dance?
+Our next concert will take place on April 25th, 2026! Buy your tickets now:
 {: .lead}
 
-<a class="btn btn-lg" href="{{ site.dir }}join-us" role="button">More information</a>
+<a class="btn btn-lg" href="https://ticket.pq.se" role="button">Tickets</a>
 
-You are welcome to our open rehearsals on Wednesdays 21/01 and 28/01, at 17:45 in Nymble!
+*Curious about the Paletta you used to hang out with 10 years ago? Thinking about that cute trumpet player you haven't seen in 20 years? Wondering who you'll meet at the PQ concert? Just come and you will find out...*
 
 {% endif %}
 
