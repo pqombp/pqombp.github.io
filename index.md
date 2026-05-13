@@ -15,34 +15,6 @@ en_title: Home
     </figcaption>
 </figure>
 
-~.jumbotron.~
-
-{% if page.sv %}
-
-Omstart — PQ:s 70-årsjubileum!
-=============================
-
-Vår nästa konsert äger rum den 25:e april 2026! Köp dina biljetter här:
-{: .lead}
-
-<a class="btn btn-lg" href="https://ticket.pq.se" role="button">Biljetter</a>
-
-*Nyfiken på vad som hände med Palettan du hängde med för 10 år sedan? Tänker du på den där söta trumpetaren som du inte har sett på 20 år? Undrar du vem du kommer att träffa på PQ-konserten? Kom bara så får du se...*
-
-{% else %}
-
-Omstart — PQ's 70-year jubilee!
-===============================
-
-Our next concert will take place on April 25th, 2026! Buy your tickets now:
-{: .lead}
-
-<a class="btn btn-lg" href="https://ticket.pq.se" role="button">Tickets</a>
-
-*Curious about the Paletta you used to hang out with 10 years ago? Thinking about that cute trumpet player you haven't seen in 20 years? Wondering who you'll meet at the PQ concert? Just come and you will find out...*
-
-{% endif %}
-
 ~.~
 
 ~.text.~
