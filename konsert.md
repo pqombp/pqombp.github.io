@@ -14,7 +14,9 @@ Konserter och framträdanden
 
 Vår sista konsert, Omstart, ägde rum den 25:e april 2026!
 
-Här är vår konsert från 2024:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LboklSg7HIA?si=93HV8YyaGZvK0-Q7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Och här är vår konsert från 2024:
 
 {%- else -%}
 
@@ -25,7 +27,9 @@ Concerts and shows
 
 Our latest concert, Omstart, took place on April 25th, 2026!
 
-Here is our concert from 2024:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LboklSg7HIA?si=93HV8YyaGZvK0-Q7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+And here is our concert from 2024:
 
 {%- endif %}
 
