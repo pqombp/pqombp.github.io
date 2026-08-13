@@ -15,6 +15,34 @@ en_title: Home
     </figcaption>
 </figure>
 
+~.jumbotron.~
+
+{% if page.sv %}
+
+Vi rekryterar!
+==============
+
+Ny på KTH? Spelar Du ett instrument och har storbands-/orkestererfarenhet eller dansar Du?
+{: .lead}
+
+<a class="btn btn-lg" href="{{ site.dir }}ga-med" role="button">Mer information</a>
+
+Välkomna till våra öppna rep på onsdagar den 2/9, 9/9 och 16/9 kl 17.45 i Nymble!
+
+{% else %}
+
+We are recruiting!
+==================
+
+New to KTH? Do you play an instrument and have bigband/orchestra experience or do you dance?
+{: .lead}
+
+<a class="btn btn-lg" href="{{ site.dir }}join-us" role="button">More information</a>
+
+You are welcome to our open rehearsals on Wednesdays 2/9, 9/9, and 16/9 at 17:45 in Nymble!
+
+{% endif %}
+
 ~.~
 
 ~.text.~
