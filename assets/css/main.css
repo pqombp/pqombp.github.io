@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -7,7 +8,8 @@ body {
     background-size: auto;
     display: flex;
     min-height: 100%;
-    flex-direction: column; /* sticky footer: http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
+    flex-direction: column;
+    /* sticky footer: http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
 }
 
 footer.footer-divider {
@@ -24,7 +26,7 @@ main {
     padding: 10px 0 10px 0;
 }
 
-main .page-content{
+main .page-content {
     flex: 1 0 auto;
     width: 100%;
 }
@@ -41,7 +43,8 @@ main .page-content{
     }
 }
 
-*, .figure-caption {
+*,
+.figure-caption {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #d8d6c4;
 }
@@ -56,7 +59,8 @@ main .page-content{
 
 }
 
-.image-frame, .embed-container {
+.image-frame,
+.embed-container {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 2px;
     padding: 5px;
@@ -79,16 +83,19 @@ small {
     color: #67665b;
 }
 
-a, a i {
+a,
+a i {
     color: #ebad39;
     font-weight: 500;
 }
 
-a:hover, a:hover i {
+a:hover,
+a:hover i {
     color: #f0ebc5;
 }
 
-a:focus, a:focus i {
+a:focus,
+a:focus i {
     color: #f0ebc5;
 }
 
@@ -153,14 +160,17 @@ a:focus, a:focus i {
         column-count: 2;
         column-gap: 20px;
     }
+
     .nav-item {
         display: inline-block;
         float: none !important;
         width: auto;
     }
+
     .nav {
         text-align: right;
     }
+
     .navbar-nav .nav-item+.nav-item {
         margin-left: 0.5rem;
     }
@@ -222,7 +232,7 @@ a:focus, a:focus i {
 .jumbotron {
     background-color: rgba(0, 0, 0, 0.8);
     border-width: thick !important;
-    border-color: #ebad39 !important;
+    border-color: #eb39b6 !important;
 }
 
 .jumbotron .btn {
@@ -300,7 +310,11 @@ a:focus, a:focus i {
     font-size: 15px;
 }
 
-form *, .pagination a, .label, .thumbnail, .dropdown-menu {
+form *,
+.pagination a,
+.label,
+.thumbnail,
+.dropdown-menu {
     border-radius: 0 !important;
 }
 
@@ -320,7 +334,8 @@ form *, .pagination a, .label, .thumbnail, .dropdown-menu {
     border-color: #ffe484;
 }
 
-.form-group-black .input-group-addon, .form-group-black input {
+.form-group-black .input-group-addon,
+.form-group-black input {
     background: none;
     border-color: #ffe484;
 }
