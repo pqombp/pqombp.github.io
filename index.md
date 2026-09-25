@@ -19,7 +19,7 @@ en_title: Home
 
 {% if page.sv %}
 
-Vi rekryterar INTE!
+Vi rekryterar!
 ==============
 
 Ny på KTH? Spelar Du ett instrument och har storbands-/orkestererfarenhet eller dansar Du?
@@ -31,7 +31,7 @@ Välkomna till våra öppna rep på onsdagar den 2/9, 9/9 och 16/9 kl 17.45 i Ny
 
 {% else %}
 
-We are NOT recruiting!
+We are recruiting!
 ==================
 
 New to KTH? Do you play an instrument and have bigband/orchestra experience or do you dance?
