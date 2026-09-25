@@ -27,7 +27,7 @@ Ny på KTH? Spelar Du ett instrument och har storbands-/orkestererfarenhet eller
 
 <a class="btn btn-lg" href="{{ site.dir }}ga-med" role="button">Mer information</a>
 
-Välkomna till våra öppna rep på onsdagar den 2/9, 9/9 och 16/9 kl 17.45 i Nymble!
+Klicka på knappen ovan och fyll i formuläret på botten av sidan så får du mer information. Vi repar onsdagar kl 17.45 i Nymble!
 
 {% else %}
 
@@ -39,7 +39,7 @@ New to KTH? Do you play an instrument and have bigband/orchestra experience or d
 
 <a class="btn btn-lg" href="{{ site.dir }}join-us" role="button">More information</a>
 
-You are welcome to our open rehearsals on Wednesdays 2/9, 9/9, and 16/9 at 17:45 in Nymble!
+Click on the button above and fill the form at the end of the page to get more information. We practice on Wednesdays at 17:45 in Nymble!
 
 {% endif %}
 
