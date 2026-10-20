@@ -15,35 +15,6 @@ en_title: Home
     </figcaption>
 </figure>
 
-~.jumbotron.~
-
-{% if page.sv %}
-
-Vi rekryterar!
-==============
-
-Ny på KTH? Spelar Du ett instrument och har storbands-/orkestererfarenhet eller dansar Du?
-{: .lead}
-
-<a class="btn btn-lg" href="{{ site.dir }}ga-med" role="button">Mer information</a>
-
-Klicka på knappen ovan och fyll i formuläret på botten av sidan så får du mer information. Vi repar onsdagar kl 17.45 i Nymble!
-
-{% else %}
-
-We are recruiting!
-==================
-
-New to KTH? Do you play an instrument and have bigband/orchestra experience or do you dance?
-{: .lead}
-
-<a class="btn btn-lg" href="{{ site.dir }}join-us" role="button">More information</a>
-
-Click on the button above and fill the form at the end of the page to get more information. We practice on Wednesdays at 17:45 in Nymble!
-
-{% endif %}
-
-~.~
 
 ~.text.~
 
